@@ -1,0 +1,8 @@
+---
+- name: Build an image with the command module for a remote docker host
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: build the image
+      command: docker build -t dockefile:latest /root/project123
